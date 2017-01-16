@@ -31,6 +31,18 @@ $(document).ready(function(){
         });
     });
 
+    $('#navbar > ul.nav li a').click(function(e) {
+        var $this = $(this);
+        $this.parent().siblings().removeClass('active').end().addClass('active');
+        e.preventDefault();
+    });
+
+    $('#navbar-footer > ul.nav li a').click(function(e) {
+        var $this = $(this);
+        $this.parent().siblings().removeClass('active').end().addClass('active');
+        e.preventDefault();
+    });
+
     $(".list-banner").slick({
         dots: true,
         arrows: true,
@@ -93,10 +105,10 @@ $(document).ready(function(){
             $(".img-clientes").css('background-image', 'url(dist/imgs/clientes.png)');
         }
     );
-    
-    $("#one .picture").css('border', '11px solid transparent');
-    $("#two .picture").css('border', '11px solid transparent');
-    $("#three .picture").css('border', '11px solid transparent');
+
+    $("#one .mask-hover").css('border', '11px solid transparent');
+    $("#two .mask-hover").css('border', '11px solid transparent');
+    $("#three .mask-hover").css('border', '11px solid transparent');
 
     $("#one .play").css('background-image', 'url(dist/imgs/youtube.png)');
     $("#two .play").css('background-image', 'url(dist/imgs/youtube.png)');
@@ -104,31 +116,31 @@ $(document).ready(function(){
 
     $("#one .call-to-action")
         .mouseenter(function() {
-            $("#one .picture").css('border', '11px solid #f90a3d');
+            $("#one .mask-hover").css('border', '11px solid #f90a3d');
             $("#one .play").css('background-image', 'url(dist/imgs/youtube-hover.png)');
         })
         .mouseleave(function() {
-            $("#one .picture").css('border', '11px solid transparent');
+            $("#one .mask-hover").css('border', '11px solid transparent');
             $("#one .play").css('background-image', 'url(dist/imgs/youtube.png)');
         });
 
     $("#two .call-to-action")
         .mouseenter(function() {
-            $("#two .picture").css('border', '11px solid #f90a3d');
+            $("#two .mask-hover").css('border', '11px solid #f90a3d');
             $("#two .play").css('background-image', 'url(dist/imgs/youtube-hover.png)');
         })
         .mouseleave(function() {
-            $("#two .picture").css('border', '11px solid transparent');
+            $("#two .mask-hover").css('border', '11px solid transparent');
             $("#two .play").css('background-image', 'url(dist/imgs/youtube.png)');
         });
 
     $("#three .call-to-action")
         .mouseenter(function() {
-            $("#three .picture").css('border', '11px solid #f90a3d');
+            $("#three .mask-hover").css('border', '11px solid #f90a3d');
             $("#three .play").css('background-image', 'url(dist/imgs/youtube-hover.png)');
         })
         .mouseleave(function() {
-            $("#three .picture").css('border', '11px solid transparent');
+            $("#three .mask-hover").css('border', '11px solid transparent');
             $("#three .play").css('background-image', 'url(dist/imgs/youtube.png)');
         });
 });

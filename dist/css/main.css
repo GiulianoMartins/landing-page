@@ -908,6 +908,7 @@ body #videos .list-video .mask .mask-hover {
   background: none;
   text-align: center;
   opacity: 1;
+  border: 11px solid transparent;
 }
 body #videos .list-video .mask .mask-hover .play {
   position: relative;
@@ -957,6 +958,9 @@ body #videos .list-video p .call-to-action-all:hover {
   background: #f90a3d;
   border: 1px solid #f90a3d;
   color: #FFFFFF;
+}
+body #videos .list-video p .call-to-action-all:hover .mask-hover {
+  border: 11px solid #f90a3d;
 }
 @media (max-width: 768px) {
   body #videos .list-video p .call-to-action-all {
