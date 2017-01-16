@@ -547,7 +547,10 @@ textarea {
 body {
   font-family: 'Dosis', sans-serif;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
-  background: #FFFFFF;
+  background-color: #FFFFFF;
+  background: url(../imgs/bg-videos.png), url(../imgs/bg-equip-left.png), url(../imgs/bg-equip-right.png), url(../imgs/detalhe-rodape.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 57% 51rem, 27% 99rem, 87% 99rem, 65% 99%;
 }
 body a {
   text-decoration: none;
@@ -1247,6 +1250,9 @@ body footer p {
 /* Portrait tablets and small desktops */
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  body {
+    background: #FFFFFF;
+  }
   body #full-banner .list-banner .mask .thumb {
     padding: 0;
   }
@@ -1276,6 +1282,9 @@ body footer p {
   }
   body #eventos {
     padding: 0;
+  }
+  body footer address .pull-left .column-address {
+    margin-bottom: 5px;
   }
 }
 /* Portrait phones and smaller */
