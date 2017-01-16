@@ -42,10 +42,8 @@ $(document).ready(function(){
         slidesToScroll: 1,
         fade: true,
         cssEase: 'linear',
-        // nextArrow: '<div class="class-to-style"><span class="fa fa-angle-right"></span><span class="sr-only">Next</span></div>',
-        // // nextArrow: '.slick-next:before',
-        // // prevArrow: '.slick-prev:before',
-        // prevArrow: '<div class="class-to-style"><span class="fa fa-angle-left"></span><span class="sr-only">Prev</span></div>',
+        // nextArrow: '<div class="arrows"><span class="icon-next"></span></div>',
+        // prevArrow: '<div class="arrows"><span class="icon-prev"></span></div>',
         responsive: [
             {
             breakpoint: 768,
@@ -95,6 +93,7 @@ $(document).ready(function(){
             $(".img-clientes").css('background-image', 'url(dist/imgs/clientes.png)');
         }
     );
+    
     $("#one .picture").css('border', '11px solid transparent');
     $("#two .picture").css('border', '11px solid transparent');
     $("#three .picture").css('border', '11px solid transparent');
@@ -104,32 +103,32 @@ $(document).ready(function(){
     $("#three .play").css('background-image', 'url(dist/imgs/youtube.png)');
 
     $("#one .call-to-action")
-    .mouseenter(function() {
-        $("#one .picture").css('border', '11px solid #f90a3d');
-        $("#one .play").css('background-image', 'url(dist/imgs/youtube-hover.png)');
-    })
-    .mouseleave(function() {
-        $("#one .picture").css('border', '11px solid transparent');
-        $("#one .play").css('background-image', 'url(dist/imgs/youtube.png)');
-    });
+        .mouseenter(function() {
+            $("#one .picture").css('border', '11px solid #f90a3d');
+            $("#one .play").css('background-image', 'url(dist/imgs/youtube-hover.png)');
+        })
+        .mouseleave(function() {
+            $("#one .picture").css('border', '11px solid transparent');
+            $("#one .play").css('background-image', 'url(dist/imgs/youtube.png)');
+        });
 
     $("#two .call-to-action")
-    .mouseenter(function() {
-        $("#two .picture").css('border', '11px solid #f90a3d');
-        $("#two .play").css('background-image', 'url(dist/imgs/youtube-hover.png)');
-    })
-    .mouseleave(function() {
-        $("#two .picture").css('border', '11px solid transparent');
-        $("#two .play").css('background-image', 'url(dist/imgs/youtube.png)');
-    });
+        .mouseenter(function() {
+            $("#two .picture").css('border', '11px solid #f90a3d');
+            $("#two .play").css('background-image', 'url(dist/imgs/youtube-hover.png)');
+        })
+        .mouseleave(function() {
+            $("#two .picture").css('border', '11px solid transparent');
+            $("#two .play").css('background-image', 'url(dist/imgs/youtube.png)');
+        });
 
     $("#three .call-to-action")
-    .mouseenter(function() {
-        $("#three .picture").css('border', '11px solid #f90a3d');
-        $("#three .play").css('background-image', 'url(dist/imgs/youtube-hover.png)');
-    })
-    .mouseleave(function() {
-        $("#three .picture").css('border', '11px solid transparent');
-        $("#three .play").css('background-image', 'url(dist/imgs/youtube.png)');
-    });
+        .mouseenter(function() {
+            $("#three .picture").css('border', '11px solid #f90a3d');
+            $("#three .play").css('background-image', 'url(dist/imgs/youtube-hover.png)');
+        })
+        .mouseleave(function() {
+            $("#three .picture").css('border', '11px solid transparent');
+            $("#three .play").css('background-image', 'url(dist/imgs/youtube.png)');
+        });
 });
