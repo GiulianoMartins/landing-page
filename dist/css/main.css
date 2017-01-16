@@ -548,9 +548,9 @@ body {
   font-family: 'Dosis', sans-serif;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
   background-color: #FFFFFF;
-  background: url(../imgs/bg-videos.png), url(../imgs/bg-equip-left.png), url(../imgs/bg-equip-right.png), url(../imgs/detalhe-rodape.png);
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: 57% 51rem, 27% 99rem, 87% 99rem, 65% 99%;
+  background: url(../imgs/bg-videos.png), url(../imgs/bg-equip-left.png), url(../imgs/detalhe-rodape.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 57% 51rem, 27% 99rem, 65% 99%;
 }
 body a {
   text-decoration: none;
@@ -1005,7 +1005,7 @@ body #videos .list-video .call-to-action:hover {
   color: #f90a3d;
 }
 body #equipamentos {
-  background: url(../imgs/bg_aluguel_equip.png) no-repeat center center #f90a3d;
+  background: url(../imgs/bg_aluguel_equip.png) no-repeat center center;
   padding: 5rem 0;
 }
 body #equipamentos .lead-highlight h2 {
